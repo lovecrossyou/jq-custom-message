@@ -8,6 +8,7 @@
     </script>
     <script>
         $(document).ready(function () {
+            //  确认框定义
             (function () {
                 CDK = {
                     cfm: function (resFun, errFun) {
@@ -36,6 +37,8 @@
             })(jQuery);//(jQuery)代表jQuery执行完毕后
 
 
+
+            // 点击触发
             $("button").click(function () {
                 CDK.cfm(res => {
                     console.log('确认执行')
